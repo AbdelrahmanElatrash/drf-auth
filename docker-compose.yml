@@ -2,10 +2,10 @@ version: "3.10"
 
 services:
   web:
-    build: 
+    build: .
     command: >
       sh -c "python manage.py migrate &&
-             gunicorn book_api_project.wsgi:application --bind 0.0.0.0:8000 --workers 4". 
+             gunicorn book_api_project.wsgi:application --bind 0.0.0.0:8000 --workers 4" 
     ports:
       - "8000:8000"
     

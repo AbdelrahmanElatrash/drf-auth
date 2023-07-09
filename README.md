@@ -20,3 +20,15 @@ another one using postman
 [see the test collection](./test_api_token.postman_collection.json)
 
 
+
+
+
+## docker 
+
+run>>  `docker compose build`
+run >>  `docker compose up`
+from another terminal at the root dir run 
+`docker compose run web python manage.py createsuperuser`
+to create super user , no need to do migration , it implemented in the dockor compose file
+
+
